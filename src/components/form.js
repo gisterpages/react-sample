@@ -41,8 +41,11 @@ class UserForm extends React.Component {
       }
 
       handleSubmit= (e) => {
+        let highest = Math.max.apply(Math, this.props.users.users.users.map((o)=>{
+            return o.id
+        }))
           let userData = {
-              id: this.props.users.users.users.length + 1,
+              id: highest + 1,
               first_name: this.state.firstName,
               last_name: this.state.lastName,
               email: this.state.email
