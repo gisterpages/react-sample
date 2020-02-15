@@ -11,7 +11,7 @@ const initialState={
 }
 
 class UserForm extends React.Component {
-    
+
     constructor() {
         super()
         this.state = {
@@ -50,14 +50,17 @@ class UserForm extends React.Component {
               last_name: this.state.lastName,
               email: this.state.email
           }
-          
+
           this.props.users.addUser(userData)
           this.setState(initialState)
       }
 
     render(){
         return (
+
                 <form>
+                    <h2>Add user</h2>
+                    <hr/>
                     <div className="form-row">
                         <div className="col-md-12 mb-3">
                             <div className="input-group">
@@ -88,7 +91,7 @@ class UserForm extends React.Component {
                 </form>
         )
     }
-  
+
 }
 
 export default UserForm;
