@@ -8,7 +8,7 @@ class UserList extends React.Component {
 
     render(){
         return (
-            
+
             <table key={this.props.users.users.randomUser.id} className="table table-striped table-dark">
                 <thead>
                     <tr>
@@ -41,7 +41,7 @@ class UserList extends React.Component {
             </table>
         )
     }
-  
+
 }
 
 export default UserList;

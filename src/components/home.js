@@ -4,13 +4,13 @@ import UserForm from './form'
 import RandomUser from './random'
 
 class Home extends React.Component {
-    
+
     render(){
         return (
             <div>
                 <div className="bg-primary">
                 <header className="container">
-                    <h1 className="text-white"><b>GISTER PAGES</b></h1>
+                    <h1 className="text-white"><b>GISTERPAGES - Sample Reach App</b></h1>
                 </header>
                 </div>
                 <div className="container">
@@ -33,7 +33,7 @@ class Home extends React.Component {
             </div>
         )
     }
-  
+
 }
 
 export default Home;

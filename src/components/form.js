@@ -59,12 +59,12 @@ class UserForm extends React.Component {
         return (
 
                 <form>
-                    <h2>Add user</h2>
+                    <h2>Add User</h2>
                     <hr/>
                     <div className="form-row">
                         <div className="col-md-12 mb-3">
                             <div className="input-group">
-                                <input type="text" className={"form-control" + this.state.firstNameValid} id="validationServerUsername" aria-describedby="inputGroupPrepend3" required value={this.state.firstName} onChange={(event)=> this.handleChange(event, 'firstName')} placeholder="First name" />
+                                <input type="text" className={"form-control" + this.state.firstNameValid} id="validationServerUsername" aria-describedby="inputGroupPrepend3" required value={this.state.firstName} onChange={(event)=> this.handleChange(event, 'firstName')} placeholder="First Name" />
                                 <div className="invalid-feedback">
                                     Enter atleast 2 letters
                                 </div>
@@ -72,7 +72,7 @@ class UserForm extends React.Component {
                         </div>
                         <div className="col-md-12 mb-3">
                             <div className="input-group">
-                                <input type="text" className={"form-control" + this.state.lastNameValid} id="validationServerUsername" aria-describedby="inputGroupPrepend3" value={this.state.lastName} onChange={(event)=> this.handleChange(event, 'lastName')} placeholder="Last name" />
+                                <input type="text" className={"form-control" + this.state.lastNameValid} id="validationServerUsername" aria-describedby="inputGroupPrepend3" value={this.state.lastName} onChange={(event)=> this.handleChange(event, 'lastName')} placeholder="Last Name" />
                                 <div className="invalid-feedback">
                                 Enter atleast 2 letters
                                 </div>
