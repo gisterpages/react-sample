@@ -21,6 +21,18 @@ import userState from '../state/userState'
       }
         
         break;
+      case "DELETE_USER": 
+        let deleteIndex = action.payload
+        state = {
+          ...state,
+          users: [
+            ...state.users.slice(0, deleteIndex), 
+            ...state.users.slice(deleteIndex+1)
+          ],
+          lastRandomUsers: [],
+          randomUser: {}
+        }
+        break;
       default: 
         return state
     }

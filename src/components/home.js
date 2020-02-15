@@ -16,7 +16,10 @@ class Home extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-8">
-                            <UserList users={this.props.users}/>
+                            <div className="table-responsive">
+                                <UserList users={this.props.users}/>
+                            </div>
+                            <hr />
                             <div className="d-flex justify-content-end">
                                 <button className="btn btn-primary" onClick={()=>this.props.users.getRandom(this.props.users.users.randomUser)}>Pick Random</button>
                             </div>

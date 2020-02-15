@@ -37,6 +37,12 @@ const mapDispatchToProps = (dispatch) => {
         type: 'ADD_USER',
         payload: data
       })
+    },
+    deleteUser: (index) => {
+      dispatch({
+        type: 'DELETE_USER',
+        payload: index
+      })
     }
   }
 }
